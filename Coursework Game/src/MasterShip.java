@@ -4,6 +4,16 @@ public class MasterShip
 	protected String name;
 	protected int position;
 	protected String mode;
+	protected Movement moveBehaviour;
+	
+	public MasterShip() 
+	{
+		setName("MasterShip");
+		setMoveBehaviour(new OneSpace());
+		setMode("Defensive");
+	}
+	
+	
 	
 	public String getName() 
 	{
@@ -34,5 +44,20 @@ public class MasterShip
 	{
 		this.mode = mode;
 	}
+	
+	public void performMove() {
+		this.moveBehaviour.move();
+	}
+	
+	public Movement getMoveBehaviour() {
+		return this.moveBehaviour;
+	}
+	
+	public void setMoveBehaviour(Movement moveBehaviour) {
+		this.moveBehaviour = moveBehaviour;
+	}
+	
+	
+	
 	
 }
