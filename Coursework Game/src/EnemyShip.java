@@ -5,6 +5,11 @@ public abstract class EnemyShip
 	protected int position;
 	protected Movement moveBehaviour;
 	
+	public EnemyShip() 
+	{
+		setPosition(0);
+	}
+	
 	
 	public String getName() 
 	{

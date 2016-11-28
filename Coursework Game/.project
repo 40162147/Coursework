@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/background.png</name>
-			<type>1</type>
-			<location>//napier-mail.napier.ac.uk/students/School of Computing/User Data/40162147/background.png</location>
-		</link>
-	</linkedResources>
 </projectDescription>

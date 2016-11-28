@@ -1,5 +1,6 @@
+import java.util.Random;
 
-public class MasterShip 
+public class MasterShip extends EnemyShip
 {
 	protected String name;
 	protected int position;
@@ -8,31 +9,12 @@ public class MasterShip
 	
 	public MasterShip() 
 	{
-		setName("MasterShip");
+		setName("mastership");
 		setMoveBehaviour(new OneSpace());
 		setMode("Defensive");
-	}
-	
-	
-	
-	public String getName() 
-	{
-		return this.name;
-	}
-
-	public void setName(String name) 
-	{
-		this.name = name;
-	}
-	
-	public int getPosition() 
-	{
-		return this.position;
-	}
-
-	public void setPosition(int position) 
-	{
-		this.position = position;
+		Random type = new Random();
+		int type1 = type.nextInt(15)+1;
+		setPosition(type1);
 	}
 	
 	public String getMode() 
@@ -44,20 +26,4 @@ public class MasterShip
 	{
 		this.mode = mode;
 	}
-	
-	public void performMove() {
-		this.moveBehaviour.move();
-	}
-	
-	public Movement getMoveBehaviour() {
-		return this.moveBehaviour;
-	}
-	
-	public void setMoveBehaviour(Movement moveBehaviour) {
-		this.moveBehaviour = moveBehaviour;
-	}
-	
-	
-	
-	
 }
