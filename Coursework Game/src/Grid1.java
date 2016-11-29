@@ -95,8 +95,8 @@ public class Grid1 extends JFrame implements Observable
 		setBounds(100, 100, 556, 417);
 		getContentPane().setLayout(null);
 		
-			background = new JLabel(new ImageIcon(Space));
-			setContentPane(background);
+		background = new JLabel(new ImageIcon(Space));
+		setContentPane(background);
 
 		
 		zero.setIcon(new ImageIcon(imageURL));
