@@ -1,9 +1,10 @@
+import javax.swing.JOptionPane;
 
-public abstract class EnemyShip 
+public abstract class EnemyShip implements Observer
 {
 	protected String name;
 	protected int position;
-	protected Movement moveBehaviour;
+	protected int PrePosition;
 	
 	public EnemyShip() 
 	{
@@ -31,18 +32,25 @@ public abstract class EnemyShip
 		this.position = position;
 	}
 	
-	public void performMove() {
-		this.moveBehaviour.move();
+	public int getPrePosition() 
+	{
+		return this.PrePosition;
 	}
-	
-	public Movement getMoveBehaviour() {
-		return this.moveBehaviour;
+
+	public void setPrePosition(int PrePosition) 
+	{
+		this.PrePosition = PrePosition;
 	}
-	
-	public void setMoveBehaviour(Movement moveBehaviour) {
-		this.moveBehaviour = moveBehaviour;
+
+	public void update() 
+	{
+		display();
 	}
-	
-	
-	
+
+	public void display() 
+	{
+		
+		JOptionPane.showMessageDialog(null,"Enemy Dead","Woooo :)",JOptionPane.WARNING_MESSAGE);
+		
+	}
 }

@@ -12,6 +12,24 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>org.eclipse.sirius.nature.modelingproject</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/battlecruiser.png</name>
+			<type>1</type>
+			<location>C:/Users/Steven/Documents/Coursework/Coursework Game/src/battlecruiser.png</location>
+		</link>
+		<link>
+			<name>src/battleshooter.png</name>
+			<type>1</type>
+			<location>C:/Users/Steven/Documents/Coursework/Coursework Game/src/battleshooter.png</location>
+		</link>
+		<link>
+			<name>src/battlestar.png</name>
+			<type>1</type>
+			<location>C:/Users/Steven/Documents/Coursework/Coursework Game/src/battlestar.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>
